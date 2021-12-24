@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rules>
+<forbiddenoperators>
+<Regex>(?&lt;=(^|\t|\040))(operators)(?=(\s|\Z))</Regex>
+<font>Microsoft Sans Serif; 10pt</font>
+<color>128; 0; 0</color>
+<BGcolor>255; 255; 255</BGcolor>
+</forbiddenoperators>
+<operators>
+<Regex>(?&lt;=(^|\t|\040))(operators)(?=(\s|\Z))</Regex>
+<font>Microsoft Sans Serif; 10pt</font>
+<color>0; 0; 255</color>
+<BGcolor>255; 255; 255</BGcolor>
+</operators>
+<labels>
+<Regex>(\d|\w)+:</Regex>
+<font>Microsoft Sans Serif; 10pt</font>
+<color>255; 0; 255</color>
+<BGcolor>255; 255; 255</BGcolor>
+</labels>
+<decimals>
+<Regex>(?&lt;=(\s|\+|-|\*|/|\(|\||!|&amp;|=|^))\d+(?=(\s|\+|-|\*|/|\)|\||!|&amp;|=|\Z))</Regex>
+<font>Microsoft Sans Serif; 10pt</font>
+<color>0; 128; 0</color>
+<BGcolor>255; 255; 255</BGcolor>
+</decimals>
+<comments>
+<Regex>;.+</Regex>
+<font>Microsoft Sans Serif; 10pt</font>
+<color>100; 100; 100</color>
+<BGcolor>255; 255; 255</BGcolor>
+</comments>
+<values>
+<Regex>\$(_|\w)+</Regex>
+<font>Microsoft Sans Serif; 10pt</font>
+<color>0; 128; 0</color>
+<BGcolor>255; 255; 255</BGcolor>
+</values>
+<types>
+<Regex>(?&lt;=(declare\s+\w+\s+))(integer|buffer|string|queue)</Regex>
+<font>Microsoft Sans Serif; 10pt</font>
+<color>100; 100; 0</color>
+<BGcolor>255; 255; 255</BGcolor>
+</types>
+</rules>

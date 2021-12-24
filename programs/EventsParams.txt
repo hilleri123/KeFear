@@ -1,0 +1,96 @@
+﻿A_ASSOCIATE.REQ;параметры: namer (буфер), namei (буфер), quality (буфер), demand (буфер), context (буфер), apcon (строка)
+A_ASSOCIATE.IND;параметры: namei (буфер), quality (буфер), apcon (строка)
+A_ASSOCIATE.RESP;параметры: namei (буфер), context (буфер), quality (буфер), apcon (строка)
+A_ASSOCIATE.CONF;параметры: context (буфер), quality (буфер), demand (буфер)
+A_RELEASE.REQ;параметры: apcon (строка)
+A_RELEASE.IND;параметры: apcon (строка)
+A_RELEASE.RESP;параметры: apcon (строка)
+A_RELEASE.CONF;параметры: apcon (строка)
+A_U_ABORT.REQ;параметры: apcon (строка)
+A_P_ABORT.IND;параметры: apcon (строка)
+A_TRANSFER_INIT.REQ;параметры: namer (строка), namei (строка), context (буфер), quality (буфер)
+A_TRANSFER_INIT.IND;параметры: namei (строка), quality (буфер)
+A_TRANSFER_INIT.RESP;параметры: namei (строка), context (буфер), quality (буфер)
+A_TRANSFER_INIT.CONF;параметры: context (строка), quality (буфер)
+A_DATA.REQ;параметры: userdata(буфер)
+A_DATA.IND;параметры: userdata (буфер)
+A_TERMINATE.REQ;параметры: нет
+A_ TERMINATE.IND;параметры: нет
+A_ TERMINATE.RESP;параметры: нет
+A_ TERMINATE.CONF;параметры: нет
+A_TRANSFER_ABORT.REQ;параметры: нет
+A_TRANSFER_ABORT.IND;параметры: нет
+A_RESOLVE.REQ;параметры: name (строка)
+A_RESOLVE.IND;параметры: address (буфер)
+T_CONNECT.REQ;параметры:  address (число)
+T_CONNECT.IND;параметры:  address (число)
+T_CONNECT.RESP;параметры:  address (число)
+T_CONNECT.CONF;параметры:  address (число)
+T_DISCONNECT.REQ;параметры:  address (число)
+T_DISCONNECT.IND;параметры:  нет
+T_DATA.REQ;параметры:   userdata (буфер)
+T_DATA.IND;параметры:  userdata (буфер)
+N_CONNECT.REQ;параметры:  address (число)
+N_CONNECT.IND;параметры:  address (число)
+N_CONNECT.RESP;параметры:  address (число)
+N_CONNECT.CONF;параметры:  address (число)
+N_DISCONNECT.REQ;параметры:  address (число)
+N_DISCONNECT.IND;параметры:  нет
+N_DATA.REQ;параметры:   userdata (буфер)
+N_DATA.IND;параметры:  userdata (буфер)
+N_DATAGRAM.REQ;параметры:  address (число), userdata (буфер)
+N_DATAGRAM.IND;параметры:  address (число), userdata (буфер)
+S_CONNECT.REQ;параметры:  address (число), quality (буфер), demand (буфер)
+S_CONNECT.IND;параметры:  address (число), quality (буфер), demand (буфер)
+S_CONNECT.RESP;параметры:  address (число), quality (буфер)
+S_CONNECT.CONF;параметры:  quality (буфер)
+S_DATA.REQ;параметры:   userdata (буфер)
+S_DATA.IND;параметры:  userdata (буфер)
+S_EXPEDITED_DATA.REQ;параметры:   userdata (буфер)
+S_EXPEDITED_DATA.IND;параметры:  userdata (буфер)
+S_GIVE_TOKENS.REQ;параметры:  token (число)
+S_GIVE_TOKENS.IND;параметры:  token (число)
+S_PLEASE_TOKENS.REQ;параметры:  token (число)
+S_PLEASE_TOKENS.IND;параметры:  token (число)
+S_P_EXCEPTION.IND;параметры:  error (число)
+S_SYNC_MAJOR.REQ;параметры:  нет
+S_SYNC_MAJOR.IND;параметры:  нет
+S_SYNC_MAJOR.RESP;параметры:  нет
+S_SYNC_MAJOR.CONF;параметры:  нет
+S_RESYNCHRONIZE.REQ;параметры:  token (число)
+S_RESYNCHRONIZE.IND;параметры:  token (число)
+S_RESYNCHRONIZE.RESP;параметры:  token (число)
+S_RESYNCHRONIZE.CONF;параметры:  token (число)
+S_RELEASE.REQ;параметры:  нет
+S_RELEASE.IND;параметры:  нет
+S_RELEASE.RESP;параметры:  нет
+S_RELEASE.CONF;параметры:  нет
+S_U_ABORT.REQ;параметры:  нет
+S_U_ABORT.IND;параметры:  нет
+S_P_ABORT.IND;параметры:  нет
+P_CONNECT.REQ;параметры:  address (число), quality (буфер), demand (буфер), context (буфер)
+P_CONNECT.IND;параметры:  address (число), quality (буфер), demand (буфер)
+P_CONNECT.RESP;параметры:  address (число), quality (буфер), context (буфер)
+P_CONNECT.CONF;параметры:  quality (буфер), context (буфер)
+P_DATA.REQ;параметры:  userdata (буфер)
+P_DATA.IND;параметры:  userdata (буфер)
+P_GIVE_TOKENS.REQ;параметры:  token (число)
+P_GIVE_TOKENS.IND;параметры:  token (число)
+P_PLEASE_TOKENS.REQ;параметры:  token (число)
+P_PLEASE_TOKENS.IND;параметры:  token (число)
+P_P_EXCEPTION.IND;параметры:  error (число)
+P_SYNC_MAJOR.REQ;параметры:  нет
+P_SYNC_MAJOR.IND;параметры:  нет
+P_SYNC_MAJOR.RESP;параметры:  нет
+P_SYNC_MAJOR.CONF;параметры:  нет
+P_RESYNCHRONIZE.REQ;параметры:  token (число)
+P_RESYNCHRONIZE.IND;параметры:  token (число)
+P_RESYNCHRONIZE.RESP;параметры:  token (число)
+P_RESYNCHRONIZE.CONF;параметры:  token (число)
+P_RELEASE.REQ;параметры:  нет
+P_RELEASE.IND;параметры:  нет
+P_RELEASE.RESP;параметры:  нет
+P_RELEASE.CONF;параметры:  нет
+P_U_ABORT.REQ;параметры:  нет
+P_U_ABORT.IND;параметры:  нет
+P_P_ABORT.IND;параметры:  нет
